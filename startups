@@ -1,0 +1,46 @@
+
+
+docker pull pihole/pihole:latest
+docker pull visibilityspots/cloudflared:latest
+sudo service systemd-resolved disable
+sudo service systemd-resolved stop
+docker stop pihole
+docker rm pihole
+/usr/bin/docker run -d \
+--name pihole \
+--add-host=apollo:192.168.86.28 \
+-e TZ="America/Chicago" \
+-p 53:53/tcp \
+-p 53:53/udp \
+-p 67:67/udp \
+-p 82:80 \
+-p 443:443 \
+--dns 8.8.8.8 \
+--dns 1.1.1.1 \
+-e DNS1=172.17.0.1#5053 \
+-e DNS2=172.17.0.1#5054 \
+-e WEBPASSWORD="jimboJ" \
+-v /home/john/etc-pihole/:/etc/pihole/ \
+-v /home/john/etc-dnsmasq.d/:/etc/dnsmasq.d/ \
+--restart=unless-stopped \
+pihole/pihole:v5.3.4-armhf-stretch
+docker run -d --name cloudflared -p 5054:5054/udp -p 5054:5054/tcp --restart=unless-stopped visibilityspots/cloudflared:latest
+docker run -d --name cloudflared2 -p 5053:5054/udp -p 5053:5054/tcp --restart=unless-stopped visibilityspots/cloudflared:latest
+sudo find /etc -name resolv.conf -exec sed -i "s/8.8.8.8/127.0.0.1/g" {} \;
+docker pull tobi312/rpi-mariadb
+docker pull jrbooth3/www:latest
+docker run -d -p 80:80 -p 8080:8080 -p 81:81 -p 8081:8081 -v /home/john/temp/docker/build/www2/www:/usr/share/nginx/wwwd -v /home/john/temp/docker/build/www2/tdi:/usr/share/nginx/tdid --restart unless-stopped --name www jrbooth3/www:latest
+docker stop mysql
+docker rm mysql
+sudo rm -rf /var/data/mysql/*
+sudo chmod 777 -R /var/data/mysql
+sleep 10
+docker run --name mysql -d -p 3306:3306 -v /var/data/mysql:/var/lib/mysql -v /home/john/temp/BU:/data -e MYSQL_ROOT_PASSWORD=%$#Kf423BVD%^#909 -e MYSQL_USER=jimbo -e MYSQL_PASSWORD=jones -e MYSQL_DATABASE=tdi --restart=unless-stopped tobi312/rpi-mariadb
+sleep 60
+/usr/bin/docker exec -t mysql find /etc/mysql/mariadb.conf.d -name 50-server.cnf -exec sed -i "s/127.0.0.1/0.0.0.0/g" {} \;
+/usr/bin/docker exec -t mysql find /etc/mysql/mariadb.conf.d -name 50-server.cnf -exec sed -i "s/#bind-address/bind-address/g" {} \;
+docker stop mysql
+docker start mysql
+sleep 15
+docker exec -i mysql sh -c 'exec mysql -u jimbo -pjones tdi' < /home/john/temp/BU/TDI_NEP.sql
+
