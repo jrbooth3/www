@@ -27,12 +27,12 @@ if (!$dbconn2) {
 }
 //echo "<br>";
 echo "<font color='lightgreen'>";
-$sql36h = "select name, date_trunc('minute', date at time zone 'america/chicago' ) as cleandate, status from svrstatus where date >= ( NOW() - INTERVAL '36 hour')  AND ( status != '' ) and (chg = '1') order by date;";
+$sql36h = "select name, date_trunc('minute', date at time zone 'america/chicago' ) as cleandate, status from svrstatus where date >= ( NOW() - INTERVAL '1 hour')  AND ( status != '' ) and (chg = '1') order by date;";
 $result36h = pg_query($sql36h);
-$sql36hct = "select count(*) from svrstatus where date >= ( NOW() - INTERVAL '36 hour')  AND ( status != '' ) and chg = '1';";
+$sql36hct = "select count(*) from svrstatus where date >= ( NOW() - INTERVAL '1 hour')  AND ( status != '' ) and chg = '1';";
 $result36hrows = pg_num_rows($result36h);
 //echo "rows in status " . $result36hrows . " now"   ;
-$sql60s = "select distinct  name, status FROM svrstatus where date >= (NOW() - INTERVAL '56 second' ) AND ( status != '' ) order by name ;";
+$sql60s = "select distinct  name, status FROM svrstatus where date >= (NOW() - INTERVAL '55 second' ) AND ( status != '' ) order by name ;";
 $result60s = pg_query($sql60s);
 echo "<table border=1";
 //if ( $result36hrows < '1' ) {
