@@ -38,7 +38,7 @@ echo "<table border=1";
 //if ( $result36hrows < '1' ) {
 //echo "no status changes";
 //}
-echo "<th colspan='5'>Device Change Status</th>";
+/*echo "<th colspan='5'>Device Change Status</th>";
 echo "<tr style='color:lightgreen'> <th> Device </th><th colspan='2'>DateTime</th> <th> Status</th><th>uptime</th></tr>";
 if ( $result36hrows < '1' ) {
 echo "<tr style='color:lightgreen'><td colspan = '5'> no device status changes </td></tr>";
@@ -50,6 +50,7 @@ $uptime = convertToHoursMins($interval, '%02d h %02d m');
 //echo "previous date was $prevdate up time $interval - $uptime <br>";
 echo "<tr style='color:lightgreen'><td>" . $myrow['name']  . "</td><td colspan='2'>" . $myrow['cleandate'] . "</td><td>" . $myrow['status'] . "</td><td>";
 $uptest = $myrow['status'];
+*/
 //if ($uptest == "down" && $interval < "500" && $interval > "10") {
 if ($uptest == "down") {
 echo $uptime;
