@@ -5,7 +5,7 @@
  <body>
 <?php
 echo "<body style='background-color:black;'>";
-echo "<font size='24'>";
+echo "<font size='18'>";
 echo "<font color='lightgreen'>";
 function convertToHoursMins($time, $format = '%02d:%02d') {
     if ($time < 1) {
@@ -50,7 +50,6 @@ $uptime = convertToHoursMins($interval, '%02d h %02d m');
 //echo "previous date was $prevdate up time $interval - $uptime <br>";
 echo "<tr style='color:lightgreen'><td>" . $myrow['name']  . "</td><td colspan='2'>" . $myrow['cleandate'] . "</td><td>" . $myrow['status'] . "</td><td>";
 $uptest = $myrow['status'];
-*/
 //if ($uptest == "down" && $interval < "500" && $interval > "10") {
 if ($uptest == "down") {
 echo $uptime;
@@ -60,6 +59,7 @@ echo "";
 echo "</td></tr>"; 
 $prevdate = $myrow['cleandate'];
         }
+*/
 echo "<th colspan='5' style='color:lightgreen'>Device current Status</th>";
 echo "<tr style='color:lightgreen'><th colspan='3'> Device </th><th colspan='2'> Status</th></tr>";
 while($myrow = pg_fetch_assoc($result60s)) { 
