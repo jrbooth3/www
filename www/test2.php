@@ -32,13 +32,14 @@ $result36h = pg_query($sql36h);
 $sql36hct = "select count(*) from svrstatus where date >= ( NOW() - INTERVAL '1 hour')  AND ( status != '' ) and chg = '1';";
 $result36hrows = pg_num_rows($result36h);
 //echo "rows in status " . $result36hrows . " now"   ;
-$sql60s = "select distinct  name, status FROM svrstatus where date >= (NOW() - INTERVAL '55 second' ) AND ( status != '' ) order by name ;";
+$sql60s = "select distinct  name, status FROM svrstatus where date >= (NOW() - INTERVAL '60 second' ) AND ( status != '' ) order by name ;";
 $result60s = pg_query($sql60s);
 echo "<table border=1";
 //if ( $result36hrows < '1' ) {
 //echo "no status changes";
 //}
-/*echo "<th colspan='5'>Device Change Status</th>";
+/*
+echo "<th colspan='5'>Device Change Status</th>";
 echo "<tr style='color:lightgreen'> <th> Device </th><th colspan='2'>DateTime</th> <th> Status</th><th>uptime</th></tr>";
 if ( $result36hrows < '1' ) {
 echo "<tr style='color:lightgreen'><td colspan = '5'> no device status changes </td></tr>";
