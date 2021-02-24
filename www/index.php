@@ -13,7 +13,7 @@ echo "<font color='red'>------test system------<font color='lightgreen'><br>";
 $test=1;
 }
 //echo $ip .':' . $port;
-/*echo "<br><button style='font-size : 36px;  background-color:lightgreen' onclick='myFunction()'>Network</button>";
+/*echo "<br><button style='font-size : 36px;  background-color:lightgreen' onclick='myFunction()'>Network stuff</button>";
 echo "<script>";
 echo "function myFunction() {";
 echo "window.open('network.php')";
