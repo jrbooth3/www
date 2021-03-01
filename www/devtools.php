@@ -22,7 +22,7 @@ echo "</script><br>";
 echo "<button style='font-size : 36px; background-color:lightgreen' onclick='myFunctionviz()'>Docker Swarm Status</button>";
 echo "<script>";
 echo "function myFunctionviz() {";
-echo "window.open('http://venus:85/')";
+echo "window.open('http://artemis:85/')";
 echo ";}";
 echo "</script><br>";
 echo "<button style='font-size : 36px; background-color:lightgreen' onclick='myFunctionfw1()'>Styx</button>";
