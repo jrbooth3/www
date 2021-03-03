@@ -10,10 +10,10 @@ echo "<table border=0>";
 echo "<col width='600'>";
 echo "<col width='250'>";
 if ( $port == 81 ) {
-echo "<br><font color='red'>------test system------<font color='lightgreen'>";
+echo "<font color='red'>------test system------<font color='lightgreen'>";
 $test=1;
 }
-echo "<br><b>Pi-Hole DNS servers<b><br>";
+echo "<br><br><b>Pi-Hole DNS servers<b><br>";
 echo "<button style='font-size : 36px; background-color:lightgreen' onclick='myFunctionpihole1()'>Andromeda</button>";
 echo "<script>";
 echo "function myFunctionpihole1() {";

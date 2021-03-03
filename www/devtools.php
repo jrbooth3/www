@@ -9,9 +9,10 @@ echo "<table border=0>";
 echo "<col width='600'>";
 echo "<col width='250'>";
 if ( $port == 81 ) {
-echo "<font color='red'>------test system------<font color='lightgreen'><br>";
+echo "<font color='red'>------test system------<font color='lightgreen'>";
 $test = 1;
 }
+echo "<br><br>--Tools--";
 echo "<br>";
 echo "<button style='font-size : 36px; background-color:lightgreen' onclick='myFunctionJenk()'>Jenkins</button>";
 echo "<script>";
