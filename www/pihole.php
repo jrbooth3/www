@@ -13,18 +13,12 @@ if ( $port == 81 ) {
 echo "<font color='red'>------test system------<font color='lightgreen'>";
 $test=1;
 }
-echo "<br><b>Milkyway</b>";
-echo "<button style='font-size : 36px; background-color:lightgreen' onclick='myFunctionpihole5()'>open</button>";
-echo "<script>";
-echo "function myFunctionpihole5() {";
-echo "window.open('http://milkyway:82/admin')";
-echo ";}";
-echo "</script>";
-echo "<br><b>Andromeda</b>";
+
+echo "<br><b>Pluto</b>";
 echo "<button style='font-size : 36px; background-color:lightgreen' onclick='myFunctionpihole4()'>open</button>";
 echo "<script>";
 echo "function myFunctionpihole4() {";
-echo "window.open('http://andromeda:82/admin')";
+echo "window.open('http://pluto:82/admin')";
 echo ";}";
 echo "</script>";
 echo "<br><b>Venus</b>";
@@ -39,6 +33,13 @@ echo "<button style='font-size : 36px; background-color:lightgreen' onclick='myF
 echo "<script>";
 echo "function myFunctionpihole2() {";
 echo "window.open('http://artemis:82/admin')";
+echo ";}";
+echo "</script>";
+echo "<br><b>Milkyway</b>";
+echo "<button style='font-size : 36px; background-color:lightgreen' onclick='myFunctionpihole5()'>open</button>";
+echo "<script>";
+echo "function myFunctionpihole5() {";
+echo "window.open('http://milkyway:82/admin')";
 echo ";}";
 echo "</script><br>";
 echo "<b>Andromeda</b>";
