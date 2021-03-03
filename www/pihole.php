@@ -20,7 +20,7 @@ echo "function myFunctionpihole3() {";
 echo "window.open('http://venus:82/admin')";
 echo ";}";
 echo "</script><br>";
-echo "<br><b>Artemis</b>";
+echo "<b>Artemis</b>";
 echo "<button style='font-size : 36px; background-color:lightgreen' onclick='myFunctionpihole2()'>open</button>";
 echo "<script>";
 echo "function myFunctionpihole2() {";
