@@ -6,6 +6,7 @@ echo "<font color='lightgreen'>";
 echo "<table border=0>";
 echo "<col width='600'>";
 echo "<col width='250'>";
+echo "ARCH=ARM32"
 echo "<button style='font-size : 36px; background-color:lightgreen' onclick='myFunctionvenus()'>Venus status pages</button>";
 echo "<script>";
 echo "function myFunctionvenus() {";
@@ -42,10 +43,23 @@ echo "function myFunctionmilkyway() {";
 echo "window.open('http://milkyway:19999')";
 echo ";}";
 echo "</script><br>";
+echo "ARCH=AMD64";"
+echo "<button style='font-size : 36px; background-color:lightgreen' onclick='myFunctionapollo()'>Apollo status pages</button>";
+echo "<script>";
+echo "function myFunctionapollo() {";
+echo "window.open('http://apollo:19999')";
+echo ";}";
+echo "</script><br>";
 echo "<button style='font-size : 36px; background-color:lightgreen' onclick='myFunctionartemis()'>Artemis status pages</button>";
 echo "<script>";
 echo "function myFunctionartemis() {";
 echo "window.open('http://artemis:19999')";
+echo ";}";
+echo "</script><br>";
+echo "<button style='font-size : 36px; background-color:lightgreen' onclick='myFunctionmars()'>Mars status pages</button>";
+echo "<script>";
+echo "function myFunctionmars() {";
+echo "window.open('http://mars:19999')";
 echo ";}";
 echo "</script><br>";
 ?>
