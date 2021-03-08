@@ -6,7 +6,7 @@ echo "<font color='lightgreen'>";
 echo "<table border=0>";
 echo "<col width='600'>";
 echo "<col width='250'>";
-echo "ARCH=ARM32"
+echo "ARCH=ARM32<br>";
 echo "<button style='font-size : 36px; background-color:lightgreen' onclick='myFunctionvenus()'>Venus status pages</button>";
 echo "<script>";
 echo "function myFunctionvenus() {";
@@ -43,7 +43,7 @@ echo "function myFunctionmilkyway() {";
 echo "window.open('http://milkyway:19999')";
 echo ";}";
 echo "</script><br>";
-echo "ARCH=AMD64";"
+echo "ARCH=AMD64<br>";
 echo "<button style='font-size : 36px; background-color:lightgreen' onclick='myFunctionapollo()'>Apollo status pages</button>";
 echo "<script>";
 echo "function myFunctionapollo() {";
