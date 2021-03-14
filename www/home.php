@@ -21,7 +21,7 @@ echo "</script><br>";
 echo "<button style='font-size : 36px; background-color:lightgreen' onclick='myFunctionJJ()'>PLEX</button>";
 echo "<script>";
 echo "function myFunctionJJ() {";
-echo "window.open('http://artemis:32400')";
+echo "window.open('https://artemis:32400')";
 echo ";}";
 echo "</script><br>";
 echo "<button style='font-size : 36px; background-color:lightgreen' onclick='myFunctionM()'>TDI</button>";

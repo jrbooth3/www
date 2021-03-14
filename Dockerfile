@@ -1,6 +1,7 @@
 FROM schoeffm/rpi-nginx:debian
 MAINTAINER Stefan Schoeffmann <stefan.schoeffmann@posteo.de>
-# update and install php
+# to remove errors with build
+RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
 RUN apt update
 RUN apt -y upgrade
 RUN apt install -y net-tools apt-utils php php-fpm php-common php-mysql php-cli php-gd php-curl php-mbstring php-zip php-apcu php-imagick php-intl php-xml php-json php-pgsql nano curl readline-common bash
@@ -14,3 +15,5 @@ ADD www /usr/share/nginx/www
 ADD tdi /usr/share/nginx/tdi
 CMD service php7.3-fpm start && nginx
 #CMD nginx
+#fairview
+#LKJSEw@4324$@4s4;ljh
