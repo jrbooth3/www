@@ -86,7 +86,7 @@ $selected = mysqli_select_db($conprd, "tdi");
 <?php
 
 include 'opendb.php';
-$result = mysqli_query($conprd, "SELECT staticint.statid, staticint.staticitem,staticint.staticmileage, vehicle.model FROM tdi.staticint LEFT JOIN vehicle ON (staticint.vehicle_id = vehicle.vehicleid) order by statid;");
+$result = mysqli_query($conprd, "SELECT staticint.statid, staticint.staticitem,staticint.staticmileage, vehicle.model FROM tdi.staticint LEFT JOIN vehicle ON (staticint.statowner = vehicle.owner) order by statid;");
 while ($row = mysqli_fetch_array($result,MYSQLI_ASSOC)) {
 print "<td>". $row{'statid'}. "</td>" ;
 print "  ";

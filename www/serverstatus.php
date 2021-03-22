@@ -25,6 +25,7 @@ echo "function myFunctionneptune() {";
 echo "window.open('http://neptune:19999')";
 echo ";}";
 echo "</script><br>";
+echo "ARCH=ARM64<br>";
 echo "<button style='font-size : 36px; background-color:lightgreen' onclick='myFunctionpluto()'>pluto status pages</button>";
 echo "<script>";
 echo "function myFunctionpluto() {";
