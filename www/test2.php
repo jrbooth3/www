@@ -39,7 +39,7 @@ echo "<table border=1";
 //echo "no status changes";
 //}
 /*
-echo "<th colspan='5'>Device Change Status</th>";
+echo "<th colspan='2'>Device Change Status</th>";
 echo "<tr style='color:lightgreen'> <th> Device </th><th colspan='2'>DateTime</th> <th> Status</th><th>uptime</th></tr>";
 if ( $result36hrows < '1' ) {
 echo "<tr style='color:lightgreen'><td colspan = '5'> no device status changes </td></tr>";
