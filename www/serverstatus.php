@@ -3,9 +3,11 @@
 echo "<body style='background-color:black;'>";
 echo "<font size='24'>";
 echo "<font color='lightgreen'>";
-echo "<table border=0>";
+echo "<table border=2>";
 echo "<col width='600'>";
-echo "<col width='250'>";
+echo "<th colspan='3'>Device Architecture</th>";
+echo "<tr style='color:lightgreen'><td colspan='1'><td>ARCH=ARM32</td><td>ARCH=ARM64</td><td>ARCH=AMD64</td></tr>";
+echo "</table>"; 
 echo "ARCH=ARM32<br>";
 echo "<button style='font-size : 36px; background-color:lightgreen' onclick='myFunctionvenus()'>Venus status pages</button>";
 echo "<script>";
