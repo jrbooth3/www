@@ -33,6 +33,7 @@ echo "window.open('test2.php')";
 echo ";}";
 echo "</script><br><br>";
 echo "--Cisco Switches--<br>";
+echo "--Cisco 2960G 10/100/1000 48 port Switches--<br>";
 echo "<button style='font-size : 36px; background-color:lightgreen' onclick='myFunctionsw1()'>Switch1</button>";
 echo "<script>";
 echo "function myFunctionsw1() {";
