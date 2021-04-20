@@ -55,19 +55,21 @@ echo "</script><br><br>";
 echo "firewalls<br>";
 echo "---SonicWall<br>";
 echo "------PRO 5060 10/100/1000 primary<br>";
-echo "<button style='font-size : 36px; background-color:lightgreen' onclick='myFunctionfw2()'Lethe001</button>";
+echo "<button style='font-size : 36px; background-color:lightgreen' onclick='myFunctionfw2()'>Lethe001</button>";
 echo "<script>";
 echo "function myFunctionfw2() {";
 echo "window.open('https://lethe001')";
 echo ";}";
-echo "</script><br><br>";
+echo "</script><br>";
+
 echo "------PRO 2040 10/100 secondary<br>";
-echo "<button style='font-size : 36px; background-color:lightgreen' onclick='myFunctionfw1()'Styx0001</button>";
+echo "<button style='font-size : 36px; background-color:lightgreen' onclick='myFunctionfw1()'>Styx0001</button>";
 echo "<script>";
 echo "function myFunctionfw1() {";
 echo "window.open('https://styx0001')";
 echo ";}";
 echo "</script><br><br>";
+
 echo "--Systems--<br>";
 echo "<button style='font-size : 36px; background-color:lightgreen' onclick='myFunctionnet()'>System's status pages</button>";
 echo "<script>";
