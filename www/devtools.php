@@ -35,6 +35,8 @@ echo "</script><br><br>";
 echo "--Switches--<br>";
 echo "--Cisco--<br>";
 echo "--2960G 10/100/1000 48 port--<br>";
+echo "--switch ports 1-8 vlan1 internet facing<br>";
+echo "--switch ports 9-48 vlan0 internal network--<br>";
 echo "<button style='font-size : 36px; background-color:lightgreen' onclick='myFunctionsw1()'>Switch1</button>";
 echo "<script>";
 echo "function myFunctionsw1() {";
