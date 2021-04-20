@@ -64,7 +64,7 @@ echo "<script>";
 echo "function myFunctionfw1() {";
 echo "window.open('https://styx0001')";
 echo ";}";
-echo "</script><br>";
+echo "</script><br><br>";
 echo "--Systems--<br>";
 echo "<button style='font-size : 36px; background-color:lightgreen' onclick='myFunctionnet()'>System's status pages</button>";
 echo "<script>";
