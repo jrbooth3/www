@@ -22,24 +22,24 @@ $test = 1;
 function myFunctionJenk() {
 window.open('http://artemis:8083')
 ;}
+</script><br>
+<button style='font-size : 36px; background-color:lightgreen' onclick='myFunctionviz()'>Docker Swarm Status</button>
+<script>
+efunction myFunctionviz() {
+window.open('http://artemis:85/')
+;}
+</script><br>
+<button style='font-size : 36px; background-color:lightgreen' onclick='myFunctionb()'>Network Device status </button>
+<script>
+function myFunctionb() {
+window.open('test2.php')
+;}
+</script><br><br>
+Network<br><br>
+Topology<br>
+IP address Lethe001/X0=10.0.0.1<br>
+IP address Lethe001/X1=dynamic from router<br>
 <?php
-echo "</script><br>";
-echo "<button style='font-size : 36px; background-color:lightgreen' onclick='myFunctionviz()'>Docker Swarm Status</button>";
-echo "<script>";
-echo "function myFunctionviz() {";
-echo "window.open('http://artemis:85/')";
-echo ";}";
-echo "</script><br>";
-echo "<button style='font-size : 36px; background-color:lightgreen' onclick='myFunctionb()'>Network Device status </button>";
-echo "<script>";
-echo "function myFunctionb() {";
-echo "window.open('test2.php')";
-echo ";}";
-echo "</script><br><br>";
-echo "Network<br><br>";
-echo "Topology<br>";
-echo "IP address Lethe001/X0=10.0.0.1<br>";
-echo "IP address Lethe001/X1=dynamic from router<br>";
 echo "IP address Lethe001/X2=192.168.86.4<br><br>";
 echo "IP address Styx0001/X0=192.168.86.3<br>";
 echo "IP address Styx0001/X1=dynamic router<br><br>";
