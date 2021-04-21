@@ -11,7 +11,7 @@ $serverip=$_SERVER['SERVER_ADDR'];
 <col width='250'>
 <?php
 if ( $port == 81 ) {
-<font color='red'>------test system------<font color='lightgreen'>";
+echo "<font color='red'>------test system------<font color='lightgreen'>";
 $test=1;
 }
 ?>
@@ -68,7 +68,6 @@ window.open('https://www.threeriversparks.org/activity/mountain-biking#condition
 </td>
 </tr>
 </font>
-?>
 <script type="text/javascript">
  function closeWindow() {
     setTimeout(function() {

@@ -26,7 +26,7 @@ window.open('http://artemis:8083')
 <button style='font-size : 36px; background-color:lightgreen' onclick='myFunctionviz()'>Docker Swarm Status</button>
 <script>
 efunction myFunctionviz() {
-window.open('http://artemis:85/')
+window.open('http://venus:85/')
 ;}
 </script><br>
 <button style='font-size : 36px; background-color:lightgreen' onclick='myFunctionb()'>Network Device status </button>

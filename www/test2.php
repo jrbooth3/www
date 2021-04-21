@@ -3,10 +3,10 @@
   <title>Network Device Status</title>
  </head>
  <body>
+<body style='background-color:black;'>
+<font size='120px'>
+<font color='lightgreen'>
 <?php
-echo "<body style='background-color:black;'>";
-echo "<font size='120px'>";
-echo "<font color='lightgreen'>";
 function convertToHoursMins($time, $format = '%02d:%02d') {
     if ($time < 1) {
         return;

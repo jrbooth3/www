@@ -47,5 +47,4 @@ function myFunctionpihole5() {
 window.open('http://milkyway:82/admin')
 ;}
 </script><br>
-?>
 </body></html>
