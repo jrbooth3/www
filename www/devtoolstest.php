@@ -110,21 +110,20 @@ window.open('https://github.com/jrbooth3')
 </script><br>
 <?php
 if ( $test == "1" ) {
-<button style='font-size : 36px; background-color:lightgreen' onclick='myFunctionDe()'>Call Jenkins to deploy Code</button>
-<script>
-function myFunctionDe() {
-
+<echo "button style='font-size : 36px; background-color:lightgreen' onclick='myFunctionDe()'>Call Jenkins to deploy Code</button>
+echo "<script>";
+echo "function myFunctionDe() {";
 echo shell_exec("curl -X POST http://auto:11c2b82cd6caa3c9a53036d127ce5064c9@192.168.86.27:8083/job/dockerPreBuild/build?token=SKLDjflekjrtlk4j3lkjslkj4lk3PEKDG");
-echo "window.open('auto.php', 'target=_blank')
-echo "window.open('http://artemis:8083/job/dbNoderefresh/')
-echo "</script><br>
+echo "window.open('auto.php', 'target=_blank')";
+echo "window.open('http://artemis:8083/job/dbNoderefresh/')";
+echo "</script><br>";
 } else {
-<button style='font-size : 36px; background-color:lightgreen' onclick='myFunctiontestsite()'>Test site</button>
-<script>
-function myFunctiontestsite() {
-window.open('http://artemis:81/')
-;}
-</script><br>
+echo "<button style='font-size : 36px; background-color:lightgreen' onclick='myFunctiontestsite()'>Test site</button>";
+echo "<script>";
+echo "function myFunctiontestsite() {";
+echo "window.open('http://artemis:81/')";
+echo ";}";
+echo "</script><br>";
 }
 ?>
 <script type="text/javascript">
