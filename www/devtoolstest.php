@@ -14,13 +14,15 @@ if ( $port == 81 ) {
 echo "<font color='red'>------test system------<font color='lightgreen'>";
 $test = 1;
 }
-echo "<br><br>--Tools--";
-echo "<br>";
-echo "<button style='font-size : 36px; background-color:lightgreen' onclick='myFunctionJenk()'>Jenkins</button>";
-echo "<script>";
-echo "function myFunctionJenk() {";
-echo "window.open('http://artemis:8083')";
-echo ";}";
+?>
+<br><br>--Tools--
+<br>
+<button style='font-size : 36px; background-color:lightgreen' onclick='myFunctionJenk()'>Jenkins</button>
+<script>
+function myFunctionJenk() {
+window.open('http://artemis:8083')
+;}
+<?php
 echo "</script><br>";
 echo "<button style='font-size : 36px; background-color:lightgreen' onclick='myFunctionviz()'>Docker Swarm Status</button>";
 echo "<script>";
