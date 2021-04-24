@@ -43,9 +43,9 @@ IP address Lethe001/X1=dynamic from router<br>
 IP address Lethe001/X2=192.168.86.4<br><br>
 IP address Styx0001/X0=192.168.86.3<br>
 IP address Styx0001/X1=dynamic router<br><br>
-IP address Google wifi (acheron)192.168.86.1 <br>
+IP address Google wifi (acheron)192.168.86.1<br>
 IP address Google internet 10.0.0.2<br>
-IP address Netgear NightHawk <br><br>
+IP address Netgear NightHawk 192.168.1.1<br><br>
 router > switch1/vlan1 > TOR wifi router advertised name Lethe PorkPie321<br>
 router > switch1/vlan1 > Lethe001/X1 > Lethe001/X0 > Google mesh internet<br>
 router > switch1/vlan1 > Lethe001/X1 > Lethe001/X2 > switch1/vlan0 for port forwarding<br>
