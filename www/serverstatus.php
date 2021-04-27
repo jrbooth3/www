@@ -3,6 +3,14 @@
 <font size='24'>
 <font color='lightgreen'>
 <table border=2> 
+<?php
+$port=$_SERVER['SERVER_PORT'];
+$serverip=$_SERVER['SERVER_ADDR'];
+if ( $port == 81 ) {
+echo "<font color='red'>------test system------<font color='lightgreen'><br>";
+$test=1;
+}
+?>
 <th colspan=3 style='color:lightgreen; font-size:60px' >Device Architecture</th>
 <tr style='color:lightgreen'><td style='font-size : 46px;'>ARCH=ARM32</td><td  style='font-size : 46px;'>ARCH=ARM64</td><td  style='font-size : 46px;'>ARCH=AMD64</td></tr>
 <tr style='color:lightgreen'>

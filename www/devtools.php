@@ -92,7 +92,7 @@ window.open('https://styx0001')
 <button style='font-size : 36px; background-color:lightgreen' onclick='myFunctionnet()'>System's status pages</button>
 <script>
 function myFunctionnet() {
-indow.open('serverstatus.php')
+window.open('serverstatus.html')
 ;}
 </script><br><br>
 --Development sites--<br>
