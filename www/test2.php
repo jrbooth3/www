@@ -32,7 +32,7 @@ $result36h = pg_query($sql36h);
 $sql36hct = "select count(*) from svrstatus where date >= ( NOW() - INTERVAL '1 hour')  AND ( status != '' ) and chg = '1';";
 $result36hrows = pg_num_rows($result36h);
 //echo "rows in status " . $result36hrows . " now"   ;
-$sql60s = "select distinct  name, status FROM svrstatus where date >= (NOW() - INTERVAL '60 second' ) AND ( status != '' ) order by name ;";
+$sql60s = "select distinct  name, status FROM svrstatus where date >= (NOW() - INTERVAL '60 second' ) AND ( status != '' ) order by status ;";
 $result60s = pg_query($sql60s);
 echo "<table border=1";
 
