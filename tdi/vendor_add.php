@@ -1,26 +1,37 @@
 <?php
 // Connects to your Database 
+$port = $_SERVER['SERVER_PORT'];
 include 'opendb.php';
+if ( $test == 1 ) {
+echo "<font color=red>----------------TEST SYSTEM------------------</font>";
+}
+$today = date('Y/m/d', strtotime("Now"));
 //Checks if there is a login cookie
 if(isset($_COOKIE['jetta_tdi']))
 //if there is, it logs you in and directes you to the members page
-{ 
-	$username = $_COOKIE['jetta_tdi']; 
+{
+	$username = $_COOKIE['jetta_tdi'];
 	$pass = $_COOKIE['Key_jetta_tdi'];
 
-	$check = mysqli_query($conprd,"SELECT * FROM users WHERE username = '$username'")or die(mysql_error());
+	$check = mysqli_query($conprd, "SELECT * FROM users WHERE username = '$username'");
 
-	while($info = mysqli_fetch_array( $check )) 	
+	while($info = mysqli_fetch_array( $check ))
 		{
-	$userid = $info['userid'];
+
 		if ($pass != $info['user_password']) 
 			{
 header('Location: login.php');
 			}
 
 		else
-			{
+			{$userid = $info['userid']
 ?>
+<html>
+<head>
+<title>Adding a vendor</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
 <body>
 <?php
 if(isset($_POST['add']))
@@ -32,13 +43,13 @@ $tele = $_POST['tele'];
 $address = $_POST['address'];
 $contact = $_POST['contact'];
 
-
-$query = "insert into tdi.vendors (vendorid, vendor_name, tele, address, contact, owner) values (' ','$vendor', '$tele', '$address', '$contact', '$userid')";
+echo "$vendor, $tele, $address, $contact";
+$query = "INSERT INTO tdi.vendors (vendor_name, tele, address, contact, owner) VALUES('$vendor', '$tele', '$address', '$contact', '$userid')";
 mysqli_query($conprd, $query) or die('insert failed');
 include 'config.php';
-echo "New vehicle added<br>";
+echo "New vendor added<br>";
 print "<p><a href=\"vehicle.php\">add another vendor? </a></p>";
-mysql_close($dbh);
+mysql_close($conprd);
 }
 else
 {
@@ -98,7 +109,7 @@ print "  ";
 print "</tr>" ;
 }
 	
-mysqli_close($con);
+//mysqli_close($conprd);
 
 ?>
 

@@ -28,7 +28,7 @@ header('Location: login.php');
 ?>
 <html>
 <head>
-<title>Untitled Document</title>
+<title>Adding fuel data</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 </head>
 
@@ -46,7 +46,7 @@ $vehicle = $_POST['vehicle'];
 if($mileage > 1)
 {
 $query = "INSERT INTO rawdata (mileage, date, gallons,vehicle) VALUES('$mileage', '$date', '$gallons','$vehicle')";
-mysqli_query($conprd, $query);
+mysqli_query($conprd, $query) ;
 echo "New MySQL record added<br>";
 print "<p><a href=\"data.php\">add another record? </a></p>";
 print "<p><a href=\"index.php\">done? </a></p>";
