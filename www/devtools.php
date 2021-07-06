@@ -22,12 +22,13 @@ $test = 1;
 function myFunctionJenk() {
 window.open('http://artemis:8083')
 ;}
-</script><br>
+/*</script><br>
 <button style='font-size : 36px; background-color:lightgreen' onclick='myFunctionviz()'>Docker Swarm Status</button>
 <script>
 function myFunctionviz() {
 window.open('http://venus:85/')
 ;}
+*/
 </script><br>
 <button style='font-size : 36px; background-color:lightgreen' onclick='myFunctionb()'>Network Device status </button>
 <script>
