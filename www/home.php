@@ -32,9 +32,9 @@ window.open('https://artemis:32400')
 function myFunctionM() {
 <?php
 if ( $test == 1 ) {
-echo "window.open('http://artemis:8081/', 'target=_blank')";
+echo "window.open('http://venus:8081/', 'target=_blank')";
 } else {
-echo "window.open('http://artemis:8080/', 'target=_blank')";
+echo "window.open('http://venus:8080/', 'target=_blank')";
 }
 ?>
 ;}
