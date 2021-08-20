@@ -15,6 +15,3 @@ expose 80 8080
 ADD ~code/www/www /usr/share/nginx/www
 ADD ~code/www/tdi /usr/share/nginx/tdi
 CMD service php7.3-fpm start && nginx
-#CMD nginx
-#fairview
-#LKJSEw@4324$@4s4;ljh
