@@ -47,7 +47,7 @@ window.open('cal.php')
 </script><br>
 <button style='font-size : 36px; background-color:lightgreen' onclick='myFunctionWIII()'>Wunderground</button>
 <script>
-function myFunctionWIII() {;
+function myFunctionWIII() {
 window.open('https://www.wunderground.com')
 ;}
 </script><br>
