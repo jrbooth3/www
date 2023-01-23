@@ -89,7 +89,7 @@ header("Location: index.php");
 <table border="0">
 <tr><td colspan=2><h1>Login</h1></td></tr>
 <tr><td>Username:</td><td>
-<input type="text" name="username" autofocus maxlength="40">
+<input type="text" name="username" autofocus maxlength="40" autofocus="autofocus">
 </td></tr>
 <tr><td>Password:</td><td>
 <input type="password" name="pass" maxlength="50">
