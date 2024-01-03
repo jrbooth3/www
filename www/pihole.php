@@ -20,21 +20,21 @@ $test=1;
 <button style='font-size : 36px; background-color:lightgreen' onclick='myFunctionpihole2()'>Artemis</button>
 <script>
 function myFunctionpihole2() {
-window.open('http://artemis:82/admin')
+window.open('http://artemis/admin')
 ;}
 </script><br>
-<button style='font-size : 36px; background-color:lightgreen' onclick='myFunctionpihole3()'>Venus/Neptune/Saturn swarm cluster</button>
+<button style='font-size : 36px; background-color:lightgreen' onclick='myFunctionpihole3()'>Cygnus</button>
 <script>
 function myFunctionpihole3() {
-window.open('http://venus:82/admin')
+window.open('http://cygnus:82/admin')
 ;}
 </script><br>
-<button style='font-size : 36px; background-color:lightgreen' onclick='myFunctionpihole4()'>Pluto</button>
+/* <button style='font-size : 36px; background-color:lightgreen' onclick='myFunctionpihole4()'>Pluto</button>
 <script>
 function myFunctionpihole4() {
 window.open('http://pluto:82/admin')
 ;}
-</script><br>
+</script><br> */
 <button style='font-size : 36px; background-color:lightgreen' onclick='myFunctionpihole5()'>Milkyway</button>
 <script>
 function myFunctionpihole5() {
