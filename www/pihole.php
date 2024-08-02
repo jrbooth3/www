@@ -17,12 +17,6 @@ $test=1;
 }
 ?>
 <br><br><b>Pi-Hole DNS servers<b><br>
-<button style='font-size : 36px; background-color:lightgreen' onclick='myFunctionpihole2()'>Artemis</button>
-<script>
-function myFunctionpihole2() {
-window.open('http://artemis/admin')
-;}
-</script><br>
 <button style='font-size : 36px; background-color:lightgreen' onclick='myFunctionpihole3()'>Cygnus</button>
 <script>
 function myFunctionpihole3() {
